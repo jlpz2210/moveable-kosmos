@@ -27,7 +27,6 @@ const App = () => {
         updateEnd: true,
         image: image.url,
         fit: FIT[Math.floor(Math.random() * FIT.length)],
-        transform: `translate(0,0)`
       },
     ]);
   };
@@ -88,8 +87,8 @@ const App = () => {
           width: "80vw",
           marginTop: 20,
           borderColor: '#777',
-          borderWidth: 10,
-          borderStyle: 'solid'
+          borderWidth: 1,
+          borderStyle: 'solid',
         }}
       >
         {moveableComponents.map((item, index) => (
